@@ -26,6 +26,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var userNameText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerBtn.isEnabled = false
         repeatPasswordText.addTarget(self, action: #selector(cekField), for: .editingChanged)
         fullNameTxt.addTarget(self, action: #selector(cekField), for: .editingChanged)
         paswwordTxt.addTarget(self, action: #selector(cekField), for: .editingChanged)

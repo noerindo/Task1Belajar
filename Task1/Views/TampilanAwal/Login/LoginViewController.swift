@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginBtn.isEnabled = false
         passwordTxt.isSecureTextEntry = true
         passwordTxt.addTarget(self, action: #selector(cekInput), for: .editingChanged)
         userNameTxt.addTarget(self, action: #selector(cekInput), for: .editingChanged)

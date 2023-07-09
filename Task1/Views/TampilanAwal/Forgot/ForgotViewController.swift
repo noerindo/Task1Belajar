@@ -25,6 +25,7 @@ class ForgotViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        resetBtn.isEnabled = false
         repeatPasswordText.addTarget(self, action: #selector(cekField), for: .editingChanged)
         passwordText.addTarget(self, action: #selector(cekField), for: .editingChanged)
         ktpText.addTarget(self, action: #selector(cekField), for: .editingChanged)

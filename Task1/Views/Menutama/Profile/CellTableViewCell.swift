@@ -10,6 +10,12 @@ import UIKit
 class CellTableViewCell: UITableViewCell {
     
     @IBOutlet weak var descCell: UILabel!
+    @IBOutlet weak var bgCell: UIView! {
+        didSet {
+            bgCell.roundCorners(corners: [.allCorners], radius: 10)
+            
+        }
+    }
     @IBOutlet weak var titleCell: UILabel!
     @IBOutlet weak var imageCell: UIImageView!
 
