@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginActionBtn(_ sender: UIButton) {
+        print("Woi")
         let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
         loginVC.navigationItem.hidesBackButton = true
         self.navigationController?.pushViewController(loginVC, animated: true)
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUpActionBtn(_ sender: UIButton) {
+        print("Hai")
         let signUpVC = self.storyboard?.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
         signUpVC.navigationItem.hidesBackButton = true
         self.navigationController?.pushViewController(signUpVC, animated: true)
